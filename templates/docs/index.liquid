@@ -1,0 +1,82 @@
+{% model "docs.json" %}
+{% block title %}Docs{% endblock %}
+{% block content %} 
+<div class="row">
+
+<div class="medium-10 columns">
+	    <!-- Optional Classes: [callout radius] -->
+			<a name="valign"></a>
+			<h3 data-magellan-destination="valign">Icons</h3>
+		<hr> 
+	  <p>For vertical alignment we use flexbox, its added into <code>.flex-align</code> class.</p>
+	  <p>It's used for wireframing boxes and image spaces.</p>
+
+	  <div class="row">
+	  	<div class="medium-4 columns">
+	  			<div class="panel large flex-align">
+            	<i class="fa fa-image fa-3x"></i>
+        		</div>
+	  	</div>
+	  </div>
+
+	<div class="row">
+		<div class="medium-12 columns">
+			<a name="data-panel"></a>
+		  		<h3 data-magellan-destination="data-panel">Data Panel</h3>
+		<hr>
+		</div>
+		<div class="medium-12 columns">
+			{% include "data-panel" with model.panel %}
+		</div>
+		<div class="medium-6 columns">
+			<h4>Include</h4>
+		<div class="panel">
+		<code></code>
+		</div>
+		</div>
+		<div class="medium-6 columns">
+			<h4>JSON</h4>	
+		<div class="panel">
+		<code></code>
+		</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="medium-12 columns">
+			<a name="icons"></a>
+			<h3 data-magellan-destination="icons">Icons</h3>
+					<hr>
+		</div>
+		<div class="medium-4 columns">
+			<h4> <i class="fa fa-star"></i> Font Awesome <i class="fa fa-car"></i> </h4>
+			<h5><a href="http://fortawesome.github.io/Font-Awesome/examples/" target="_blank"> View Examples</a></h5>
+			<h5><a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank"> List of icons</a></h5>
+
+		</div>
+				<div class="medium-8 columns">
+
+			<br>
+			<i class="fa fa-twitter-square fa-lg"></i> fa-lg
+			<i class="fa fa-twitter-square fa-2x"></i> fa-2x
+			<i class="fa fa-twitter-square fa-3x"></i> fa-3x
+			<i class="fa fa-twitter-square fa-4x"></i> fa-4x
+			<i class="fa fa-twitter-square fa-5x"></i> fa-5x
+		</div>
+
+
+	</div>
+</div>
+
+<div class="medium-2 columns hide-for-small-only">
+	<div data-magellan-expedition="fixed" data-options="destination_threshold:60">
+		<ul class="side-nav magellan">
+		  <li data-magellan-arrival="valign"><a href="#valign">Vertical Align</a></li>
+		  <li data-magellan-arrival="data-panel"><a href="#data-panel">Data Panel</a></li>
+		  <li data-magellan-arrival="icons"><a href="#icons">Icons</a></li>
+		</ul>
+	</div>
+</div>
+
+</div>
+{% endblock %} 
