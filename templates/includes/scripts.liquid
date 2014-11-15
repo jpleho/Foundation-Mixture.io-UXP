@@ -4,3 +4,34 @@
 <script>
 $(document).foundation();
 </script>
+
+<script type="text/javascript">
+
+// toggle hide elements script
+
+$("[data-hide]").on('click', function(e) {
+  // e.preventDefault();
+  var target = $(this).data('hide');
+  $(target).toggle();
+});
+// end toggle hide
+
+// toggle disable form elements script
+
+(function($) {
+    $.fn.toggleDisabled = function(){
+        return this.each(function(){
+            this.disabled = !this.disabled;
+        });
+    };
+})(jQuery);
+
+$("[data-disable]").on('click', function(e) {
+  // e.preventDefault();
+  var target = $(this).data('disable');
+  $(target).toggleDisabled();
+});
+
+// end toggle disable
+
+</script>

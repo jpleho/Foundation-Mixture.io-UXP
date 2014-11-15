@@ -21,6 +21,36 @@
 
 	<div class="row">
 		<div class="medium-12 columns">
+			<a name="icons"></a>
+			<h3 data-magellan-destination="showdisable">Show/hide or enable/disable elements</h3>
+					<hr>
+		</div>
+		<div class="medium-6 columns">
+			<input type="checkbox" name="vehicle" value="Bike" data-hide=".bike" checked> I have a bike
+			<i class="bike fa fa-smile-o fa-lg"></i>
+			<i class="bike fa fa-bicycle fa-lg"></i>
+			<i class="bike fa fa-frown-o fa-lg" style="display: none;"></i>
+		</div>
+
+		<div class="medium-6 columns">
+			<div class="panel">
+		Use data-hide = ".class or #id" </div>
+		</div>
+
+		<div class="medium-3 columns">
+		<input type="checkbox" name="vehicle" value="Bike" data-disable="#form" checked> Enabled form
+		</div>
+		<div class="medium-3 columns end">
+		<input id="form" type="text" value="testttt" />
+		</div>
+		<div class="medium-6 columns">
+			<div class="panel">
+		Use data-disable = ".class or #id" </div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="medium-12 columns">
 			<a name="data-panel"></a>
 		  		<h3 data-magellan-destination="data-panel">Data Panel</h3>
 		<hr>
@@ -72,6 +102,7 @@
 	<div data-magellan-expedition="fixed" data-options="destination_threshold:60">
 		<ul class="side-nav magellan">
 		  <li data-magellan-arrival="valign"><a href="#valign">Vertical Align</a></li>
+		  <li data-magellan-arrival="showdisable"><a href="#showdisable">Show or Disable</a></li>
 		  <li data-magellan-arrival="data-panel"><a href="#data-panel">Data Panel</a></li>
 		  <li data-magellan-arrival="icons"><a href="#icons">Icons</a></li>
 		</ul>
